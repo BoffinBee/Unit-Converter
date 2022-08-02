@@ -30,9 +30,10 @@ function poundToKilogram (pound) {
 
 function renderDetails() {
     const inputValue = inputEl.value;
-    lengthDetailsEl.textContent = `${inputValue} meters = ${meterToFeet(inputValue)} feet | ${inputValue} feet = ${feetToMeter(inputValue)} meter`;
-    volumeDetailsEl.textContent = `${inputValue} liters = ${literToGallon(inputValue)} gallons | ${inputValue} gallons = ${gallonToLiter(inputValue)} liters`;
-    massDetailsEl.textContent = `${inputValue} kilograms = ${kilogramToPound(inputValue)} pounds | ${inputValue} pounds = ${poundToKilogram(inputValue)} kilograms`;
+    const apprxInputValue = (parseFloat(inputValue)).toFixed(3);
+    lengthDetailsEl.textContent = `${apprxInputValue}m = ${meterToFeet(inputValue)}ft | ${apprxInputValue}ft = ${feetToMeter(inputValue)}m`;
+    volumeDetailsEl.textContent = `${apprxInputValue}L = ${literToGallon(inputValue)}gal | ${apprxInputValue}gal = ${gallonToLiter(inputValue)}L`;
+    massDetailsEl.textContent = `${apprxInputValue}kg = ${kilogramToPound(inputValue)}lb | ${apprxInputValue}lb = ${poundToKilogram(inputValue)}kg`;
 
 }
 
