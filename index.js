@@ -30,7 +30,7 @@ function poundToKilogram (pound) {
 
 function renderDetails() {
     const inputValue = inputEl.value;
-    const apprxInputValue = (parseFloat(inputValue)).toFixed(3);
+    const apprxInputValue = (parseFloat(inputValue));
     lengthDetailsEl.textContent = `${apprxInputValue}m = ${meterToFeet(inputValue)}ft | ${apprxInputValue}ft = ${feetToMeter(inputValue)}m`;
     volumeDetailsEl.textContent = `${apprxInputValue}L = ${literToGallon(inputValue)}gal | ${apprxInputValue}gal = ${gallonToLiter(inputValue)}L`;
     massDetailsEl.textContent = `${apprxInputValue}kg = ${kilogramToPound(inputValue)}lb | ${apprxInputValue}lb = ${poundToKilogram(inputValue)}kg`;

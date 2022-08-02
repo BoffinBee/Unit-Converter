@@ -38,7 +38,7 @@ body {
     color: white;
     border-radius: 5px;
     margin: 10px 0px;
-    padding: 0px;
+    padding: 0px 4px;
 }
 
 #convert-btn {
