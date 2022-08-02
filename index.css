@@ -8,6 +8,7 @@ body {
     width: 550px;
     height: 730px;
     border: none;
+    border-radius: 5px;
 }
 
 .top {
@@ -52,6 +53,15 @@ body {
     padding: 0px;
 }
 
+#convert-btn:hover{
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+#convert-btn:active{
+    width: 115px;
+}
+
 .bottom {
     background-color: #F4F4F4;
     display: flex;
@@ -60,13 +70,14 @@ body {
 }
 
 .unit-container {
-    height: 110px;
+    height: 112px;
     margin: 10px 0px;
     background-color: white;
     border-radius: 4px;
 }
 
 .unit-title {
+    margin-top: 30px;
     color: #5A537B;
     font-size: 20px;
     font-weight: 600;
